@@ -1,0 +1,596 @@
+/* Estilo de fontes padrões */
+.text-p
+{
+  /* font-family: serif; */
+  size: 1.5em;
+  text-align: justify;
+}
+
+.text-collapsed
+{
+  color: black;
+}
+
+#form-input-model
+{
+  color: black;
+  font-family: serif;
+  background-color: white;
+}
+
+.button-module
+{
+  font-family: serif;
+}
+
+.font-serif
+{
+  font-family: serif; 
+}
+/* Fim Estilo de fontos padrões*/
+
+
+/* Button padronização do estilo */
+#button-pattern
+{
+  min-width: 20em;
+}
+
+.btn-va
+{
+  width: 200px;
+  height: 200px;
+  font-size: 2em;
+  font-family: serif;
+}
+
+/* Fim Button padronização */
+
+.text-center
+{
+  /* font-family: serif; */
+  text-align: center;
+}
+
+
+/* Estilo de imagens */
+.img-model
+{
+  max-width: 100px;
+}
+
+
+
+/* Menu admin */
+#img-admin
+{
+  padding: 15%;
+}
+
+.title-item
+{
+  color: black;
+  font-family: impact;
+  text-align: center;
+  font-size: 3em;
+}
+
+#page-content-wrapper div
+{
+  float: left;
+}
+
+.border-container
+{
+  border-style: solid;
+  border-width: 5px;
+
+  padding: 10px 20px 5px 20px;
+  color: black;
+  font-family: serif;
+  background-color: white;
+}
+
+#border-container
+{
+  border-style: solid;
+  border-width: 5px;
+
+  padding: 10px 20px 5px 20px;
+  color: black;
+  font-family: serif;
+  background-color: white;
+}
+
+.img-logo
+{
+  max-width: 200px;
+}
+
+/* Barra lateral esquerda */
+
+#link-color-black 
+{
+  outline: none;
+  color: black;
+}
+
+#barra-lateral a
+{
+  outline: none;
+}
+
+#menu-toggle
+{
+  margin-top: -15%;
+  outline: none;
+}
+
+
+.row-barra-esquerda{
+    margin-left:0px;
+    margin-right:0px;
+}
+
+#wrapper {
+    padding-left: 70px;
+    transition: all .4s ease 0s;
+    height: 100%
+}
+
+#sidebar-wrapper {
+    margin-left: -150px;
+    left: 70px;
+    width: 150px;
+    background: #222;
+    position: fixed;
+    height: 100%;
+    z-index: 10000;
+    transition: all .4s ease 0s;
+}
+
+.sidebar-nav {
+    display: block;
+    float: left;
+    width: 150px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#page-content-wrapper {
+    padding-left: 0;
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+}
+#wrapper.active {
+    padding-left: 150px;
+}
+#wrapper.active #sidebar-wrapper {
+    left: 150px;
+}
+
+#page-content-wrapper {
+  width: 100%;
+}
+
+#sidebar_menu li a, .sidebar-nav li a {
+    color: #999;
+    display: block;
+    float: left;
+    text-decoration: none;
+    width: 150px;
+    background: #252525;
+    border-top: 1px solid #373737;
+    border-bottom: 1px solid #1A1A1A;
+    -webkit-transition: background .5s;
+    -moz-transition: background .5s;
+    -o-transition: background .5s;
+    -ms-transition: background .5s;
+    transition: background .5s;
+}
+.sidebar_name {
+    padding-top: 25px;
+    color: #fff;
+    opacity: .7;
+}
+
+.sidebar-nav li {
+  line-height: 40px;
+  text-indent: 20px;
+}
+
+.sidebar-nav li a {
+  color: #999999;
+  display: block;
+  text-decoration: none;
+}
+
+.sidebar-nav li a:hover {
+  color: #fff;
+  background: rgba(255,255,255,0.2);
+  text-decoration: none;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+  height: 65px;
+  line-height: 60px;
+  font-size: 18px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+  color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
+#main_icon
+{
+    float:right;
+   padding-right: 65px;
+   padding-top:20px;
+}
+.sub_icon
+{
+    float:right;
+   padding-right: 65px;
+   padding-top:10px;
+}
+.content-header {
+  height: 65px;
+  line-height: 65px;
+}
+
+.content-header h1 {
+  margin: 0;
+  margin-left: 20px;
+  line-height: 65px;
+  display: inline-block;
+}
+
+@media (max-width:767px) {
+  #wrapper {
+  padding-left: 70px;
+  transition: all .4s ease 0s;
+  }
+  #sidebar-wrapper {
+      left: 70px;
+  }
+  #wrapper.active {
+      padding-left: 150px;
+  }
+  #wrapper.active #sidebar-wrapper {
+      left: 150px;
+      width: 150px;
+      transition: all .4s ease 0s;
+  }
+}
+
+
+
+
+
+
+
+/* Lista de cursos */
+
+.max-size-img
+{
+  max-width: 50em;
+  max-height: 50em;
+}
+
+#list-course body 
+{
+  min-height: 75rem; /* Can be removed; just added for demo purposes */
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.jumbotron {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  margin-bottom: 0;
+  background-color: #fff;
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+.album {
+  min-height: 50rem; /* Can be removed; just added for demo purposes */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #f7f7f7;
+}
+
+.card {
+  float: left;
+  width: 33.333%;
+  padding: .75rem;
+  margin-bottom: 2rem;
+  border: 0;
+}
+
+.card > img {
+  margin-bottom: .75rem;
+}
+
+.card-text {
+  font-size: 1.25em;
+}
+
+#list-course footer 
+{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+#list-course footer p 
+{
+  margin-bottom: .25rem;
+}
+
+.container-course
+{
+  padding: 5%;
+}
+
+
+#list-course a
+{
+  outline: none;
+  text-align: justify;
+  font-family: serif;
+  color: black;
+}
+
+
+
+/* Novo css */
+
+div#nav-button
+{
+  border-style: solid;
+  border-width: 1px;
+  /* border-radius: 5px; */
+  border-color: #34b3a0; 
+  padding: 10px 20px 5px 20px;
+  color: #34b3a0;
+  font-family: serif;
+}
+
+
+div#nav-button-green
+{
+  border-style: solid;
+  border-width: 1px;
+  border-color: #34b3a0; 
+  padding: 10px 20px 5px 20px;
+  color: white;
+  font-family: serif;
+  background-color: #34b3a0;
+}
+/*
+  div#nav-button-green:hover
+  {
+    cursor:pointer;
+  }
+*/
+
+div#nav-button-clear
+{
+  border-style: solid;
+  border-width: 1px;
+  border-color: white; 
+  padding: 10px 20px 5px 20px;
+  color: black;
+  font-family: serif;
+  background-color: white;
+}
+
+.aling-button
+{
+  padding: 0px 0px 0px 10px;
+}
+
+#form-text
+{
+  font-family: serif;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+a{outline:none} /* código para os links*/
+
+
+
+
+/* CSS login */
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.button-submit-green
+{
+  border-style: solid;
+  border-width: 1px;
+  border-color: #34b3a0; 
+  width: 100%;
+  height: 50px;
+  color: white;
+  font-family: serif;
+  font-size: 1.5em;
+  background-color: #34b3a0;
+}
+
+.button-submit-warning
+{
+  border-style: solid;
+  border-width: 1px;
+  border-color: brown; 
+  width: 100%;
+  height: 50px;
+  color: #161616;
+  font-family: serif;
+  font-size: 1.5em;
+  background-color: brown;
+}
+
+
+.button-submit-danger
+{
+  border-style: solid;
+  border-width: 1px;
+  border-color: #999966; 
+  width: 100%;
+  height: 50px;
+  color: #161616;
+  font-family: serif;
+  font-size: 1.5em;
+  background-color: #999966;
+}
+
+
+
+
+
+
+
+
+
+/* Space out content a bit */
+body {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+/* Custom page header */
+.header {
+  padding-bottom: 1rem;
+  border-bottom: .05rem solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 3rem;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 1.5rem;
+  color: #777;
+  border-top: .05rem solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 48em) {
+  .container {
+    max-width: 46rem;
+  }
+}
+.container-narrow > hr {
+  margin: 2rem 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: .05rem solid #e5e5e5;
+}
+.jumbotron .btn {
+  padding: .75rem 1.5rem;
+  font-size: 1.5rem;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 3rem 0;
+}
+.marketing p + h4 {
+  margin-top: 1.5rem;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 48em) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 2rem;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+
+
+
+
+
