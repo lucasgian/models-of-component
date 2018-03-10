@@ -1,3 +1,96 @@
-<p>
-  register works!
-</p>
+<body data-spy="scroll" data-target=".navbar-fixed-top">
+
+    
+    <div class="container">
+        <div class="login-isf">
+    <h2>Criar Acesso</h2>
+
+    <div class="col-md-8 col-xs-12">
+        <p>
+            Bem-vindo ao Lemon Curse. <br>
+            Defina um email, senha e nome de usuário, como sendo seu meio de <strong>Acesso</strong> para se
+            cadastrar.<br>
+
+            Se você já efetuou o cadastro, vá para <strong>Entrar</strong>.<br>
+             
+        </p>
+    </div>
+
+    <div class="caixa-login col-md-4 col-xs-12 sombra-2">
+
+        <form class="form-signin" method="post" action="?url=form add user">
+            <div class="col-md-12 col-xs-12">
+                <!-- Input Email -->
+                <div class="row">
+                    <div class="form-group col-md-12 col-xs-12">
+                        <label for="Email:">
+                          <i class="fa fa-envelope" aria-hidden="true"></i>
+                          E-mail de acesso:</label>
+                        <input type="email" name="inputEmail" id="inputEmail" class="form-control cpf" placeholder="Digite seu e-mail" autofocus="true" required="true">
+                    </div>
+                </div>
+                <!-- Input Senha -->
+                <div class="row">
+                    <div class="form-group col-md-12 col-xs-12">
+                        <label for="Senha:">
+                          <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                          Senha:</label>
+                        <input type="password" name="inputPassword" id="inputPassword" class="form-control"
+                               placeholder="Digite sua senha" required="true">
+                    </div>
+                </div>
+
+                <!-- Input User Name -->
+                <div class="row">
+                    <div class="form-group col-md-12 col-xs-12">
+                        <label for="UserName:">
+                          <i class="fa fa-user" aria-hidden="true"></i>
+                          Nome de Usuário:</label>                        
+                        <input type="text" name="inputName" id="inputName" class="form-control"
+                               placeholder="Digite seu Nome" required="true">
+                    </div>
+                </div>
+                <!-- Captcha -->
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="col-md-12">
+                            <div class="row">
+                                <button type="submit" id="btnAutenticar" name="btnAutenticar"
+                                        class="btn btn-success btn-block">Cadastrar
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </form>
+
+
+    </div>
+</div>  
+</div>
+<br>
+<br><br><br><br><br><br><br><br>
+
+<!--
+<form class="form-signin" method="post" action="<?php echo "?url=form add user"; ?>">
+  <h2 id="form-text" class="form-signin-heading">Crie uma cadastro</h2>
+  <label for="inputEmail" class="sr-only">E-mail de acesso</label>
+  <input type="email" name="inputEmail" id="inputEmail" class="form-control" placeholder="E-mail de acesso" required autofocus>
+  <label for="inputPassword" class="sr-only">Senha</label>
+  <input type="password" name="inputPassword" id="inputPassword" class="form-control" placeholder="Senha" required>
+  <label for="inputName" class="sr-only">Nome de Usuário</label>
+  <input type="text" name="inputName" id="inputName" class="form-control" placeholder="Nome de Usuário" required>
+  
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" value="remember-me"> Remember me
+    </label>
+  </div>
+  
+  <button class="button-submit-green" type="submit">Cadastrar</button>
+ 
+</form>
+-->
