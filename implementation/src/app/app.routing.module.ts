@@ -12,7 +12,8 @@ import { TaskComponent } from './task/task.component';
             { path: 'login', component: LoginComponent },
             //{ path: 'edit/:id', component: TaskEditComponent },
             { path: 'task', component: TaskComponent },
-            { path: 'register', component: RegisterComponent }
+            { path: 'register', component: RegisterComponent },
+            { path: '', pathMatch: 'full', redirectTo: 'task' }
         ]
     )],
     exports: [RouterModule]
