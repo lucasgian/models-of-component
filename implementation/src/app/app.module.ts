@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule }   from '@angular/forms';
+// Class
 
 // Configuração de route
 import { AppRoutingModule } from './app.routing.module';
@@ -23,7 +25,10 @@ import { TaskComponent } from './task/task.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
+  ],
+  exports: [
   ],
   providers: [],
   bootstrap: [AppComponent]
