@@ -20,11 +20,4 @@ export class RegisterComponent {
   validationField (field) {
     return field.invalid && (field.dirty || field.touched);
   }
-
-  cssError (field) { 
-    return {
-      'name.errors.required': this.validationField(field) 
-    }
-  }
-
 }

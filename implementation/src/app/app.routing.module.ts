@@ -13,6 +13,7 @@ import { TaskComponent } from './task/task.component';
             //{ path: 'edit/:id', component: TaskEditComponent },
             { path: 'task', component: TaskComponent },
             { path: 'register', component: RegisterComponent },
+            { path: 'login/register', component: RegisterComponent },
             { path: '', pathMatch: 'full', redirectTo: 'task' }
         ]
     )],
