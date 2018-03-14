@@ -5,6 +5,7 @@
         <div class="login-isf">
             <h2>Criar Acesso</h2>
 
+
             <div class="col-md-8 col-xs-12">
                 <p>
                     Bem-vindo ao Lemon Curse.
@@ -33,16 +34,9 @@
                         </div>
 
                         <!-- Message validate -->
-                        <div *ngIf="email.invalid && (email.dirty || email.touched)" class="alert alert-danger">
-
-                            <div *ngIf="email.errors.required">
-                                Email é obrigatorio.
-                            </div>
-                            <div *ngIf="email.errors.minlength">
-                                Email must be at least 11 characters long.
-                            </div>
-
-                        </div>
+                        <field-error-control 
+                            [showError]="validationField(email)"  [field]="email" [minimum]="11">
+                        </field-error-control>
 
                         <!-- Input Senha -->
                         <div class="row">
@@ -56,16 +50,10 @@
                         </div>
 
                         <!-- Message validate senha -->
-                        <div *ngIf="password.invalid && (password.dirty || password.touched)" class="alert alert-danger">
+                        <field-error-control 
+                            [showError]="validationField(password)" [field]="password" [minimum]="6">
+                        </field-error-control>
 
-                            <div *ngIf="password.errors.required">
-                                Password é obrigatorio.
-                            </div>
-                            <div *ngIf="password.errors.minlength">
-                                Password must be at least 6 characters long.
-                            </div>
-
-                        </div>
 
                         <!-- Input User Name -->
                         <div class="row">
@@ -79,24 +67,18 @@
                         </div>
 
                         <!-- Message validate user name -->
-                        <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
-
-                            <div *ngIf="name.errors.required">
-                                Name é obrigatorio.
-                            </div>
-                            <div *ngIf="name.errors.minlength">
-                                Name must be at least 4 characters long.
-                            </div>
-
-                        </div>
-
+                        <field-error-control 
+                            [showError]="validationField(name)" [field]="name" [minimum]="4">
+                        </field-error-control>
+            
                         <!-- Captcha -->
                         <div class="row">
                             <div class="col-md-12">
 
                                 <div class="col-md-12">
                                     <div class="row">
-                                        <button type="submit" [disabled]="!f.valid" id="btnAutenticar" name="btnAutenticar" class="btn btn-success btn-block">Cadastrar
+                                        <button type="submit" [disabled]="!f.valid" data-tooltip="Realizar cadastro" class="btn btn-success btn-block tooltipped">
+                                            Cadastrar
                                         </button>
                                     </div>
                                 </div>
@@ -112,6 +94,10 @@
     </div>
     <br>
     <br>
+
+
+    <!--
+
     <br>
     <br>
     <br>
@@ -120,7 +106,6 @@
     <br>
     <br>
 
-    <!--
 <form class="form-signin" method="post" action="<?php echo "?url=form add user"; ?>">
   <h2 id="form-text" class="form-signin-heading">Crie uma cadastro</h2>
   <label for="inputEmail" class="sr-only">E-mail de acesso</label>

@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
 import { User } from '../class/user';
 
 @Component({
@@ -16,7 +16,15 @@ export class RegisterComponent {
     console.log(this.user);  
   }
 
-  ngOnInit() {
+
+  validationField (field) {
+    return field.invalid && (field.dirty || field.touched);
+  }
+
+  cssError (field) { 
+    return {
+      'name.errors.required': this.validationField(field) 
+    }
   }
 
 }

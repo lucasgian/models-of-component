@@ -12,7 +12,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { FooterComponent } from './footer/footer.component';
 import { TaskComponent } from './task/task.component';
-
+import { FieldErrorControlComponent } from './field-error-control/field-error-control.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,8 @@ import { TaskComponent } from './task/task.component';
     LoginComponent,
     RegisterComponent,
     FooterComponent,
-    TaskComponent
+    TaskComponent,
+    FieldErrorControlComponent
   ],
   imports: [
     BrowserModule,
