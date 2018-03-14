@@ -1,0 +1,8 @@
+<div *ngIf="showError"  class="alert alert-danger">
+    <div *ngIf="field.errors.required">
+        Esse campo é obrigatorio.
+    </div>
+    <div *ngIf="field.errors.minlength">
+        Mínimo de {{ minimum }} letras.
+    </div>
+</div>
