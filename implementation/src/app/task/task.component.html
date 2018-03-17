@@ -1,37 +1,97 @@
-<div class="container">
-  <ul class="collection">
-    <a href="#" class="collection-item avatar">
-      <i class="fas fa-plus-circle circle"></i>
-      <span class="title">Adicionar</span>
-      <a href="#!" class="secondary-content">
-        <i class="material-icons">grade</i>
-      </a>
-    </a>
-    <a href="#" class="collection-item avatar">
-      <i class="fas fa-edit circle"></i>
-      <span class="title">Editar</span>
-      <a href="#!" class="secondary-content">
-        <i class="material-icons">grade</i>
-      </a>
-    </a>
-    <a href="#" class="collection-item avatar">
-      <i class="fas fa-times-circle circle"></i>
-      <span class="title">Excluir</span>
-      <a href="#!" class="secondary-content">
-        <i class="material-icons">grade</i>
-      </a>
-    </a>
-    <!--
-    <li class="collection-item avatar">
-      <i class="material-icons circle red">play_arrow</i>
-      <span class="title">Title</span>
-      <p>First Line
-        <br> Second Line
-      </p>
-      <a href="#!" class="secondary-content">
-        <i class="material-icons">grade</i>
-      </a>
+<div class="row">
+  <ul class="collapsible col s12 m4 20" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header">
+        <i class="material-icons">add</i>Adicionar</div>
+      <div class="collapsible-body">
+        <span>
+          <div class="row">
+            <form class="col s12" #f="ngForm" (ngSubmit)="add(f)">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="name" name="name" type="text" class="validate" [ngModel]="tasks.name">
+                  <label for="first_name">Nome</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="value" name="value" type="text" class="validate" [ngModel]="tasks.value">
+                  <label for="last_name">Valor</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="info" name="info" type="text" class="validate" [ngModel]="tasks.info">
+                  <label for="last_name">Informações</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12">
+                  <button class="waves-effect waves-light btn" type="submit">
+                    <i class="material-icons left">send</i>Enviar
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </span>
+      </div>
     </li>
-    -->
+    <li>
+      <div class="collapsible-header">
+        <i class="material-icons">close</i>Excluir Tudo
+      </div>
+    </li>
   </ul>
+
+  <table class="highlight centered col s12 m4 l8">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Comentário</th>
+        <th>Valor</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let task of tasks">
+        {{ task.name }}
+      </tr>
+
+      <!--
+      <tr>
+        <td>Alvin</td>
+        <td>Eclair</td>
+        <td>$0.87</td>
+      </tr>
+      <tr>
+        <td>Alan</td>
+        <td>Jellybean</td>
+        <td>$3.76</td>
+      </tr>
+      <tr>
+        <td>Jonathan</td>
+        <td>Lollipop</td>
+        <td>$7.00</td>
+      </tr>
+    -->
+    </tbody>
+  </table>
 </div>
+
+
+<!--
+
+    <li>
+      <div class="collapsible-header">
+        <i class="material-icons">place</i>Second</div>
+      <div class="collapsible-body">
+        <span>Lorem ipsum dolor sit amet.</span>
+      </div>
+    </li>
+    <li>
+      <div class="collapsible-header">
+        <i class="material-icons">whatshot</i>Third</div>
+      <div class="collapsible-body">
+        <span>Lorem ipsum dolor sit amet.</span>
+      </div>
+    </li>
+-->
