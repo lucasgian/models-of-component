@@ -9,17 +9,17 @@
             <form class="col s12" #f="ngForm" (ngSubmit)="add(f)">
               <div class="row">
                 <div class="input-field col s6">
-                  <input id="name" name="name" type="text" class="validate" [ngModel]="tasks.name">
+                  <input id="name" name="name" type="text" class="validate" [(ngModel)]="task.name">
                   <label for="first_name">Nome</label>
                 </div>
                 <div class="input-field col s6">
-                  <input id="value" name="value" type="text" class="validate" [ngModel]="tasks.value">
+                  <input id="value" name="value" type="text" class="validate" [(ngModel)]="task.value">
                   <label for="last_name">Valor</label>
                 </div>
               </div>
               <div class="row">
                 <div class="input-field col s6">
-                  <input id="info" name="info" type="text" class="validate" [ngModel]="tasks.info">
+                  <input id="info" name="info" type="text" class="validate" [(ngModel)]="task.info">
                   <label for="last_name">Informações</label>
                 </div>
               </div>
@@ -52,8 +52,19 @@
     </thead>
 
     <tbody>
-      <tr *ngFor="let task of tasks">
-        {{ task.name }}
+      <tr *ngFor="let value of tasks">
+        <td> {{ value.name }} </td>
+        <td> {{ value.value }} </td>
+        <td> {{ value.info }} </td>
+        <td>
+          <button class="waves-effect waves-light pink accent-3 btn">
+            <i class="material-icons">close</i>
+          </button>
+
+          <button class="waves-effect waves-light amber btn" (click)="edit( value.id )">
+              <i class="material-icons">edit</i>
+            </button>
+        </td>
       </tr>
 
       <!--

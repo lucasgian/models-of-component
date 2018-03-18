@@ -7,17 +7,16 @@ import { Task } from "./../class/task";
   styleUrls: ['./task.component.css']
 })
 export class TaskComponent implements OnInit {
-
-  tasks: Task [];
-  
-  
-  public add(form) {
-    this.tasks.push(new Task(0, form.name, form.info, form.value));
-  }
+  task = new Task();
+  tasks = [];
 
   constructor() { }
 
-  ngOnInit() {
+  add(form) {
+    this.tasks.push(this.task);
+  }
+
+  ngOnInit() { 
   }
 
 }
