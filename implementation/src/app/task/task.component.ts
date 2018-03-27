@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Task } from "./../class/task";
 
 @Component({
   selector: 'app-task',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./task.component.css']
 })
 export class TaskComponent implements OnInit {
+  task = new Task();
+  tasks = [];
 
   constructor() { }
 
-  ngOnInit() {
+  add(form) {
+    this.tasks.push(this.task);
+  }
+
+  ngOnInit() { 
   }
 
 }
